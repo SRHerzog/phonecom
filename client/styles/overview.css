@@ -1,0 +1,8 @@
+.row {
+	composes: row from './global.css';
+}
+
+.infoBox {
+	width: 320px;
+	margin: 0 auto;
+}

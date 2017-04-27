@@ -1,0 +1,29 @@
+// index.scss
+@import '~normalize.css';
+@import '~react-md/src/scss/react-md';
+
+$md-primary-color: $md-green-500;
+$md-secondary-color: $md-yellow-a-400;
+
+// Include all components
+@include react-md-everything;
+
+// Or only a few
+@include react-md-typography;
+@include react-md-grid;
+@include react-md-buttons;
+
+.md-background--primary {
+    background: $md-primary-color !important;
+}
+
+.md-tab-label {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.narrow-column {
+    padding-bottom: 0;
+    padding-top: 0;
+    vertical-align: auto;
+}

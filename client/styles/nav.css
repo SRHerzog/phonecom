@@ -1,0 +1,82 @@
+nav {
+	background-color: #338;
+}
+
+a {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 50px;
+	line-height: 50px;
+}
+
+.navFlex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.panelItem {
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	background-color: #338;
+	color: #fff;
+	cursor: pointer;
+}
+
+.panelItemSelected {
+	composes: panelItem;
+	background-color: #99c;
+	color: #000;
+}
+
+.desktopItem {
+	composes: panelItem;
+	display: none;
+}
+
+.desktopItemSelected {
+	composes: panelItemSelected desktopItem;
+}
+
+.extraNav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media screen and (min-width: 410px) {
+	nav {
+		margin-right: 20px;
+	}
+	.navFlex {
+		flex-wrap: wrap;
+	}
+	.desktopItem {
+		display: block;
+	}
+
+	.mobileButton {
+		display: none;
+	}
+
+	.extraNav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.panelItem {
+		width: 100%;
+		text-align: right;
+	}
+	nav, .navFlex {
+		width: 200px;
+		height: 100%;
+		display: block;
+	}
+	a {
+		padding-right: 20px;
+	}
+}

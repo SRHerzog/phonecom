@@ -1,0 +1,18 @@
+.routeDetails {
+	width: auto;
+}
+
+.routeDetails > tbody > tr > th {
+	text-align: left;
+	width: auto;
+}
+
+.routeDetails > tbody > tr > td {
+    padding-left: 10px;
+	text-align: left;
+	width: auto;
+}
+
+.spacedField {
+    margin-bottom: 4px;
+}

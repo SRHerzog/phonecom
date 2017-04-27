@@ -1,0 +1,92 @@
+.subForm {
+    border-left: 1px solid black;
+    margin-left: 30px;
+}
+
+.formComponent {
+    height: auto;
+}
+
+.formComponent > div {
+    height: auto;
+}
+
+.formComponent > button {
+    width: default;
+    height: default;
+    background: default;
+}
+
+.inlineSection {
+    display: flex;
+    align-items: center;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.deselected {
+    opacity: 0.7;
+}
+
+.formControls {
+    composes: controls from './global.css';
+    display: flex;
+    justify-content: space-around;
+}
+
+.formWithColumns > div:first-of-type {
+    min-width: 260px;
+    margin-bottom:;
+}
+
+.availableItem {
+    padding-left: 20px;
+    font-size: 16px;
+    height: 20px;
+    line-height: 22px;
+}
+
+.formWithColumns {
+    width: 100%;
+}
+
+.formWithColumns > div:first-of-type {
+    margin-bottom: 20px;
+}
+
+.formWithColumns > div:last-of-type {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 410px) {
+    .formWithColumns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .formWithColumns > div:first-of-type {
+        padding-right: 8px;
+    }
+
+    .formWithColumns > div:last-of-type {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .formWithColumns {
+        max-width: 700px;
+    }
+    .formWithColumns > div:first-of-type {
+        padding-right: 12px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .formWithColumns > div:first-of-type {
+        padding-right: 18px;
+    }
+}
